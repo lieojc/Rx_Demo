@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="1">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <TextView
+        android:id="@+id/pindian"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="设置选项"
+        android:singleLine="true"
+        android:textColor="#815F3D"
+        android:textSize="20sp" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    >
+
+    <include
+        layout="@layout/widget_dsp_config2"/>
+
+</LinearLayout>
+
+
+
+    <ToggleButton
+        android:id="@+id/startbusiness"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textOff="打开业务数据"
+        android:textOn="关闭业务数据"
+        android:textSize="@dimen/font_small"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/butt"
+        />
+
+
+    <LinearLayout     android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:layout_weight="0.02"
+    >
+
+
+    <TextView
+        android:id="@+id/tiaozhenshu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:singleLine="true"
+        android:textColor="#815F3D"
+        android:textSize="20sp"
+
+     />
+
+        <TextView
+        android:id="@+id/tiaozhennumber"
+        android:layout_width="699dp"
+        android:layout_height="30dp"
+        android:singleLine="true"
+        android:textColor="#815F3D"
+        android:textSize="20sp"
+
+        />
+
+</LinearLayout>
+
+    <LinearLayout     android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.02">
+
+
+        <TextView
+            android:id="@+id/txwrite"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="写入文件"
+            android:singleLine="true"
+            android:textColor="#815F3D"
+            android:textSize="20sp"
+
+            />
+        <TextView
+            android:id="@+id/txwritename"
+            android:layout_width="699dp"
+            android:layout_height="30dp"
+            android:singleLine="true"
+            android:textColor="#815F3D"
+            android:textSize="20sp"
+            android:text="xxx.bin"
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout     android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="时长(秒)："
+            android:singleLine="true"
+            android:textColor="#815F3D"
+            android:textSize="20sp"
+
+            />
+        <TextView
+            android:id="@+id/activity_biz_tv_file_time_phrase"
+            android:layout_width="699dp"
+            android:layout_height="30dp"
+            android:singleLine="true"
+            android:textColor="#815F3D"
+            android:textSize="20sp"
+            android:text="60"
+
+            />
+
+
+    </LinearLayout>
+    <LinearLayout     android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:textColor="#815F3D"
+            android:textSize="20sp"
+
+            />
+        <TextView
+            android:id="@+id/activity_biz_tv_biz_data_count"
+            android:layout_width="699dp"
+            android:layout_height="30dp"
+            android:singleLine="true"
+            android:textColor="#815F3D"
+            android:textSize="20sp"
+
+
+            />
+
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/sendupdatebutt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/font_small"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/butt"
+        android:text="发送升级文件" />
+
+</LinearLayout>
+
+
+</LinearLayout>

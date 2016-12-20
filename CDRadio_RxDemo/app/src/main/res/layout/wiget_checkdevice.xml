@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="beantest.lieo.myapplication.MainActivity"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:gravity="left"
+    >
+
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="刷新设备"
+        android:id="@+id/relaxdevice"
+        android:background="@drawable/butt"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@+id/startdevice"
+        android:layout_toEndOf="@+id/startdevice"
+        android:layout_marginLeft="20dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="重置设备"
+            android:id="@+id/activity_biz_btn_reset_connection"
+            android:background="@drawable/butt"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@+id/startdevice"
+            android:layout_toEndOf="@+id/startdevice"
+            android:layout_marginLeft="20dp" />
+
+        <TextView
+
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="请先刷新设备，再打开业务数据，遇刷新失败请重置连接"
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="@dimen/font_small"
+            android:textColor="#815F3D"
+            android:layout_marginLeft="6dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+        android:id="@+id/main_tv_activate_feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="现在的状态是："
+        android:layout_marginLeft="7dp"
+            android:textColor="@color/green"
+        android:layout_alignBottom="@+id/relaxdevice"
+        android:layout_toRightOf="@+id/relaxdevice"
+        android:layout_toEndOf="@+id/relaxdevice"
+       />
+</LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:id="@+id/textView"
+        android:background="@color/dangreen"/>
+</LinearLayout>

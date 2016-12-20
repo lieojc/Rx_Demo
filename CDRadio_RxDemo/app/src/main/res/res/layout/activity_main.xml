@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+   >
+    <utils.SlideMenu
+        android:id="@+id/slide_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+    <include layout="@layout/layout_menu" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+       >
+
+
+        <include layout="@layout/layout_title_bar"
+            android:id="@+id/include" />
+
+        <LinearLayout
+            android:layout_width="1200dp"
+            android:layout_height="1200dp"
+            android:orientation="vertical"
+            android:layout_below="@+id/include"
+            android:layout_toRightOf="@+id/linearLayout"
+            android:layout_toEndOf="@+id/linearLayout"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_alignBottom="@+id/linearLayout">
+        <include layout="@layout/wiget_textview"
+            android:layout_height="match_parent"
+            android:layout_width="854dp"
+            android:layout_gravity="right"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/include" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="424dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout"
+            android:layout_below="@+id/include">
+            //检测设备
+
+            <include layout="@layout/wiget_checkdevice"
+                android:layout_width="436dp"
+                android:layout_height="181dp" />
+            //开始业务数据
+            <include layout="@layout/wiget_startbusiness"
+                android:layout_width="433dp"
+                android:layout_height="621dp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</utils.SlideMenu>
+    </RelativeLayout>
+
+
